@@ -1,0 +1,79 @@
+:root {
+    --main-bg-color: #264f1a;
+    --nav-button-color: rgb(30, 35, 48);
+}
+
+body {
+    background-color: var(--main-bg-color); 
+}
+
+.nav {
+    width: 90%;
+    height: 80px;
+    background-color: white;
+    margin: auto;
+    border: none;
+    border-radius: 50px;
+    margin-top: 50px;
+}
+
+.nav ul {
+    list-style: none;
+    text-transform: capitalize;
+    font-size: 15pt;
+    text-align: start;
+    padding-top: 25px;
+    width: 80%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    color: #676b5f;
+    margin: 0;
+}
+
+.nav ul li {
+    display: inline;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.nav ul li:hover {
+    background-color: #eff0ec;
+    width: 100px;
+    height: 20px;
+    border-radius: 10px;
+    
+}
+
+.btns {
+    margin: -45px;
+    text-align: right; 
+    margin-right: 10px;
+}
+
+.btns button {
+    border: none;
+    padding: 20px;
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.btns :nth-child(1) {
+    background-color: #eff0ec;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.btns :nth-child(1):hover {
+    background-color: rgb(221, 223, 214)
+}
+
+.btns :nth-child(2) {
+    background-color: var(--nav-button-color);
+    color:#eff0ec;
+    border-radius: 50px;
+}
+
+.btns :nth-child(2):hover {
+    background-color: rgb(30, 35, 48, 0.9);
+    
+}
