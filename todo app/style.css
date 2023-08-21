@@ -10,10 +10,10 @@ body {
 
 .box {
     background-color: black;
-    width: 30%;
-    height: 500px;
+    width: 40%;
+    height: 600px;
     border: none;
-    border-radius: 8px;
+    border-radius: 1.5em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,7 +29,7 @@ body {
     width: 80%;
     display: flex;
     flex-direction: row;
-    height: 35px;
+    height: 50px;
 }
 
 .box .input-btn input[type='text'] {
@@ -62,7 +62,7 @@ ul {
     color: aliceblue;
     width: 100%;
     overflow-y: scroll;
-    height: 390px;
+    height: 90%;
 }
 
 ul li {
@@ -73,7 +73,6 @@ ul li {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #1180f8;
     border: none;
     border-radius: 10px;
     padding: 0 5px;
