@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+}
+
+.checked {
+    color: orange;
+}
+
+nav {
+    width: 10%;
+    height: 100%;
+    background-color: #172957;
+}
+
+h1 {
+    margin-left: 50px;
+}
+
+.content {
+    display: block;
+    overflow-y: scroll;
+}
+
+.list-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 95%;
+    margin: auto;
+    height: 100%;
+
+}
+
+.card {
+    background-color: white;
+    width: 235px;
+    height: 400px;
+    box-shadow: -3px 1px 95px -34px rgba(0,0,0,0.56);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+}
+
+.card > img {
+    width: 100%;
+    min-height: 180px;
+    max-height: 180px;
+    border: solid .5px gray;
+}
+
+.card > h3 {
+    color: black;
+    opacity: .67;
+}
+
+.card > .review {
+    display: flex;
+    flex-direction: row;
+}
+
+.card > p {
+    font-size: larger;
+    font-weight: bolder;
+}
