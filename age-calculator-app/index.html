@@ -16,15 +16,15 @@
     <div class="input">
       <div class="day-input">
         <label>day</label>
-        <input type="text" placeholder="DD"/>
+        <input id="d"  type="text" placeholder="DD"/>
       </div>
       <div class="month-input">
         <label>month</label>
-        <input type="text" placeholder="MM"/>
+        <input id="m" type="text" placeholder="MM"/>
       </div>
       <div class="year-input">
         <label>year</label>
-        <input type="text" placeholder="YYYY"/>
+        <input id="y" type="text" placeholder="YYYY"/>
       </div>    
     </div>
     <div class="line-button">
@@ -34,10 +34,11 @@
       </button>
     </div>
     <div class="result">
-      <p><span>38</span>years</p>
-      <p><span>33</span>months</p>
-      <p><span>26</span>days</p>
+      <p><span id="year">38</span>years</p>
+      <p><span id="month">33</span>months</p>
+      <p><span id="days">26</span>days</p>
     </div>
   </div>
+  <script src="./script.js"></script>
 </body>
 </html>
