@@ -1,0 +1,17 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    gap: 80px
+}
+
+.app > h1 {
+    text-transform: uppercase;
+    letter-spacing: 20px;
+}
+
+.app > h1 > p {
+    margin: 0;
+}

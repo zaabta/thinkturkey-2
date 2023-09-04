@@ -1,0 +1,60 @@
+.result-container {
+    background-color:#00474a;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 85%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 35px;
+  }
+  
+
+
+  .result-tip {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .result-tip .text {
+    color: aliceblue;
+  }
+
+  .result-tip .per {
+    color: hsl(184, 14%, 56%);
+    font-size: .9rem;
+  }
+
+  .result-tip .amount {
+    font-size: 40px;
+    color: hsl(172, 67%, 45%);
+  }
+  .result-container button {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 0.8rem;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: auto;
+  }
+
+  .result-container button:hover {
+    background-color: #c5e4e7;
+    color: 00474a
+  }
+
+  p.text{
+    margin: 0;
+  }

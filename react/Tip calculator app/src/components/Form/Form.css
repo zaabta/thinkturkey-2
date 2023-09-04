@@ -1,0 +1,49 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.form  input[type='number'] {
+    background-color: #f3f8fb;
+    border: none;
+    height: 35px;
+    font-size: large;
+    width: 90%;
+}
+
+
+.form > input[type='number']:focus {
+    outline: none;
+}
+
+.form > .btns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.form > .btns > input {
+    width: 75px;
+    height: 35px;
+}
+
+.form > .btns > input[type='button'] {
+    background-color: #0c4145;
+    color: white;
+    border: none;
+    font-size: large;
+    border-radius: 5px;
+    font-weight: 550;
+}
+
+.form > .btns > input[type='button']:hover {
+    background-color: #c5e4e7;
+    color: #00474a;
+    cursor: pointer;
+}
