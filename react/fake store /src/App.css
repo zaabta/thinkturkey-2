@@ -1,0 +1,56 @@
+body {
+  background-color: rgb(27, 27, 222);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  text-transform: uppercase;
+}
+
+.box {
+  width: 900px;
+  height: 600px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+
+.box > .card {
+  width: calc(200px - 30px);
+  height: calc(250px - 30px);   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0px -1px 73px -20px rgba(0,0,0,0.75);
+}
+
+.box > .card > p {
+  align-self: flex-start;
+}
+
+.box > .card > img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.box > .card > button {
+  background-color: rgb(255, 166, 0);
+  border: none;
+  color: rgb(255, 119, 0);
+  width: 100%;
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
