@@ -1,0 +1,89 @@
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: blueviolet;
+}
+
+
+.box {
+  width: 600px;
+  height: 600px;
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+
+.box > h1 {
+  color: white;
+  text-transform: capitalize;
+  margin: 30px 0 0 0;
+}
+
+.text-input {
+  display: flex;
+  height: 40px;
+  width: 60%;
+}
+
+.text-input > input {
+  border: 1px solid blueviolet;
+}
+
+.text-input > input[type="text"] {
+  width: 70%;
+  color: white;
+  background-color: transparent;
+  border-right: none;
+  padding-left: 10px;
+}
+
+.text-input > input[type="button"] {
+  width: 30%;
+  cursor: pointer;
+  border-left: none;
+  background-color: blueviolet;
+  color: white;
+  font-weight: 550;
+}
+
+.text-input > input:focus {
+  outline: none;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-y: scroll;
+  height: 60%;
+}
+
+.todo {
+  background-color: aliceblue;
+  width: 480px;
+  height: 45px;
+  border-radius: 10px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: large;
+}
+
+.todo > p {
+  margin-left: 5px;
+}
+
+.todo > .btns > *  {
+  cursor: pointer;
+  margin: 0 5px;
+}
