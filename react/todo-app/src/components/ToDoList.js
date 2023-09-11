@@ -1,6 +1,9 @@
 import { ToDo } from "./ToDo";
+import { useContext } from "react";
+import { TaskContext } from "../context";
 
-export const ToDoList = ({ data, checkFun, deleteFun }) => {
+export const ToDoList = () => {
+    const { tasks: data } = useContext(TaskContext);
     return(<div className="todo-list">
         {
             data.map((task) => {
@@ -10,8 +13,6 @@ export const ToDoList = ({ data, checkFun, deleteFun }) => {
                     text={task.content} 
                     color={task.color} 
                     isChecked={task.isChecked}
-                    checkTodo={checkFun}
-                    deleteTodo={deleteFun}
                     />)
             })
         }

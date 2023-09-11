@@ -1,27 +1,12 @@
 import './App.css';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { Box } from './components/Box';
 import { ToDoList } from './components/ToDoList';
+import { TaskContext } from './context';
 
 const App = () => {
   const [text, setText] = useState("");
-  const [tasks, setTasks] = useState([]);
-  const handleOnCheck = (id) => {
-    const newTasks = [...tasks];
-    const index = newTasks.findIndex((task) => task.id === id);
-    if(index !== -1) {
-      newTasks[index].isChecked = !newTasks[index].isChecked
-      setTasks(newTasks);
-    }
-  }
-  const handleOnDelete = (id) => {
-    const newTasks = [...tasks];
-    const index = newTasks.findIndex((task) => task.id === id);
-    if(index !== -1) {
-      newTasks.splice(index, 1)
-      setTasks(newTasks);
-    }
-  }
+  const { tasks, setTasks } = useContext(TaskContext);
   return (
     <div className="app">
       <Box>
@@ -46,7 +31,7 @@ const App = () => {
               setText("");
             }}/>
         </div>
-        <ToDoList data={tasks} checkFun={handleOnCheck} deleteFun={handleOnDelete} />
+        <ToDoList />
       </Box>
     </div>
   );

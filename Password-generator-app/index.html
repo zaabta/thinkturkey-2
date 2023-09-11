@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Handjet' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="password">
+            <input type="text" disabled placeholder="P4$5W0rD"/>
+            <img src="./assets/icons/copy.png" alt="copy"/>
+        </div>
+        <div class="password-option">
+            <div class="flex-row justify-space len">
+                <p>Character Length </p>
+                <p id="len">0</p>
+            </div>
+            <input type="range" class="progress-bar" min="1" max="50" />
+            <div class="flex-col align-start justify-center options">
+                <div>
+                    <input type="checkbox"/>
+                    <label>Include Uppercase Letters</label>
+                </div>
+                <div>
+                    <input type="checkbox"/>
+                    <label>Include Lowercase Letters</label>
+                </div>
+                <div>
+                    <input type="checkbox" checked/>
+                    <label>Include  Number</label>
+                </div>
+                <div>
+                    <input type="checkbox"/>
+                    <label>Include  Symbols</label>
+                </div>
+            </div>
+            <div class="flex-row justify-space align-center strength">
+                <p>Strength</p>
+                <div class="flex-row">
+                    <p>medium</p>
+                    <div class="flex-row align-center justify-center bars">
+                        <div class="bar-1 fill"></div>
+                        <div class="bar-2 fill"></div>
+                        <div class="bar-3 fill"></div>
+                        <div class="bar-4"></div>
+                    </div>
+                </div>
+            </div>
+            <input type="button" value="Generator  ->"/>
+        </div>
+    </div>
+    <script src="./srcipt.js"></script>
+</body>
+</html>
